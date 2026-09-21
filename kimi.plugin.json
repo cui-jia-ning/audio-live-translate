@@ -1,0 +1,27 @@
+{
+  "$schema": "https://catalog.msh.team/misc/kimi.plugin.schema.json",
+  "name": "audio-live-translate",
+  "version": "0.1.0+local.20260921-184427",
+  "description": "捕获电脑正在播放的音频（外语视频、跨国会议、直播、网课），实时语音识别并翻译成中文，在桌面悬浮窗口中滚动显示原文与译文。适用于看外语视频、跨国会议、直播听译等场景。",
+  "keywords": [
+    "实时翻译",
+    "音频识别",
+    "同声传译",
+    "听译",
+    "悬浮窗",
+    "whisper"
+  ],
+  "author": "Local developer",
+  "license": "MIT",
+  "skillInstructions": "当用户要求实时翻译电脑正在播放的音频（外语视频、会议、直播、网课）并显示在窗口时：检查依赖 → 启动悬浮窗 → 循环执行 capture.py 录音、transcribe.py 离线识别、agent 自行翻译中文并追加写入 overlay_feed.jsonl，直到用户说停止。",
+  "interface": {
+    "displayName": "电脑音频实时翻译窗",
+    "shortDescription": "在 Kimi 里使用 电脑音频实时翻译窗",
+    "longDescription": "捕获电脑正在播放的音频（外语视频、跨国会议、直播、网课），实时语音识别并翻译成中文，在桌面悬浮窗口中滚动显示原文与译文。适用于看外语视频、跨国会议、直播听译等场景。",
+    "developerName": "Local developer",
+    "websiteURL": "",
+    "iconUrl": "",
+    "category": "PRODUCTIVITY"
+  },
+  "skills": "./skills/"
+}
